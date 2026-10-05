@@ -1,0 +1,17 @@
+{
+  "name": "fenix-max",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private MAX lead notifications for Fenix Plus",
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "start": "node scripts/run.mjs --loop",
+    "dispatch": "node scripts/run.mjs --once",
+    "check": "node scripts/run.mjs --check",
+    "test": "node scripts/test.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "manager:prepare": "node scripts/connect-manager.mjs prepare",
+    "manager:confirm": "node scripts/connect-manager.mjs confirm"
+  }
+}
